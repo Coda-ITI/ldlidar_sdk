@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++11 -Wall -Wextra -g2 -ggdb -rdynamic CMakeFiles/ldlidar.dir/demo.cpp.o -o ldlidar  libldlidar_driver.a -lpthread 
