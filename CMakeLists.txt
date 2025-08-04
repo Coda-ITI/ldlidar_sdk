@@ -4,15 +4,8 @@ project(ldlidar_driver)
 # Set include directories for header files
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-# Add -pthread flag for threading support
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
-
 # Find Boost (dynamic linking by default)
 find_package(Boost REQUIRED COMPONENTS system thread)
-
-# Print operating system info
-message(STATUS "operation system is ${CMAKE_SYSTEM}")
-message(STATUS "current platform: Linux")
 
 # Define source files for Linux
 set(LDLIDAR_DRIVER_SOURCE

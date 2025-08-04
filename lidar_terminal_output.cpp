@@ -48,7 +48,7 @@ void printClosestInQuadrants(const ldlidar::Points2D& points, int scan_count) {
 int main() {
     // Specify your LiDAR model and serial port
     ldlidar::LDType lidar_type = ldlidar::LDType::LD_06; // Example: LD06, adjust as needed
-    std::string serial_port = "/dev/ttyUSB1"; // Adjust to your serial port
+    std::string serial_port = "/dev/ttyUSB0"; // Adjust to your serial port
     uint32_t baudrate = 230400; // Default baudrate for LD06, adjust per model
 
     // Create LiDAR driver instance
